@@ -3,6 +3,50 @@
 @tailwind utilities;
 
 ::selection {
-  color: #2491C5;
+  color: black;
   background-color:#f4b600;
+}
+
+.heading {
+  position: relative;
+  @apply text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold
+/* Center the text within the heading container */
+}
+
+.heading::after {
+  content: '';
+  position: absolute;
+  top:120%;
+  left: 0; 
+  right: 0; 
+  margin-left: auto; 
+  margin-right: auto; 
+  width: 300px;
+  height: 0.85rem; 
+  z-index: -1;
+  background-repeat: no-repeat;
+  background-image: url('../public/assets/underline.svg');
+
+}
+
+.sub-heading {
+  @apply p-2 text-lg sm:text-xl md:text-2xl font-bold
+}
+
+.content-heading{
+  @apply p-2 text-lg sm:text-xl font-semibold
+}
+
+.content{
+  @apply p-2 my-2 text-sm sm:text-base xl:text-lg
+}
+
+.list-item {
+
+  background-repeat: no-repeat;
+  background-image: url('../public/assets/check.svg');
+  background-size: 1rem; 
+  background-position-y: 0.4rem;
+  @apply ps-7  text-sm sm:text-base xl:text-lg
+
 }
