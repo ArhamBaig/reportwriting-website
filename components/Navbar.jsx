@@ -66,8 +66,8 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="flex flex-col">
-      <div className="bg-secondary/80 w-screen px-3 sm:px-8 md:px-14 lg:px-20 fixed  backdrop-blur-md z-30  flex justify-between items-center h-10">
+    <nav className="flex flex-col fixed  z-30">
+      <div className="bg-secondary/80 w-screen px-3 sm:px-8 md:px-14 lg:px-20   backdrop-blur-md z-30  flex justify-between items-center h-10">
         <div className="flex cursor-pointer   font-semibold  rounded-full">
           <Image className="mr-2 p-[3px] hover:-translate-y-1 transition-all cursor-pointer" src={mail} height={20} width={30}/>
           <p className="hidden md:block">sales@reportwritinghelp.com</p>
@@ -83,8 +83,8 @@ const Navbar = () => {
           <Image  className="p-[7px] hover:-translate-y-1 transition-all cursor-pointer" src={whatsapp} height={20} width={40} />
         </div>
       </div>
-      <div className="container sm:px-1 mt-10 lg:px-8 py-3  mx-auto flex flex-col md:flex-row justify-between items-center">
-        <Image src={logo} height={150} width={150} />
+      <div className="bg-slate-300/80 backdrop-blur-lg px-3 sm:px-8 md:px-14 lg:px-20 flex flex-col md:flex-row justify-between items-center">
+        <Image src={logo} height={150} width={150} className="p-1" />
         <div className="md:flex text-black">
           <ul className="hidden md:flex flex-col md:flex-row space-y-4   md:space-y-0 md:space-x-5 lg:space-x-16">
             {navLinks.map((link, index) => (
@@ -117,7 +117,7 @@ const Navbar = () => {
                       className={`hover:text-secondary flex items-center ${
                         (link.title === "Services" && isServicesHovered) ||
                         (link.title === "Countries" && isCountriesHovered)
-                          ? "text-gray-300"
+                          ? "border-b-2 border-secondary"
                           : ""
                       }`}
                     >
@@ -143,7 +143,7 @@ const Navbar = () => {
                             link.title === "Countries")
                             ? "opacity-100"
                             : "opacity-0 pointer-events-none"
-                        } md:flex flex-col space-y-2  bg-white left-[-70px] z-20 w-60 rounded-bl-lg rounded-br-lg transition-opacity duration-1000`}
+                        } md:flex flex-col space-y-2 top-[55px] left-[-70px] z-20 w-60 rounded-bl-lg rounded-br-lg transition-opacity duration-500 bg-slate-300/80 backdrop-blur-lg`}
                       >
                         {link.dropdown.map((item, subIndex) => (
                           <div key={subIndex}>
@@ -170,9 +170,9 @@ const Navbar = () => {
 
                             {item.subdropdown && liActive === item.text && (
                               <ul
-                                className={`absolute md:flex flex-col space-y-2 bg-white rounded-br-lg rounded-bl-lg rounded-tr-lg left-full z-20 w-56`}
+                                className={`absolute md:flex flex-col space-y-2 rounded-br-lg rounded-bl-lg rounded-tr-lg bg-slate-300/90 left-full z-20 w-56`}
                                 style={{
-                                  top: `${subIndex * 3}rem`,
+                                  top: `${subIndex * 2.75}rem`,
                                 }}
                                 onMouseEnter={() => setLiActive(item.text)}
                                 onMouseLeave={() => {
@@ -205,7 +205,7 @@ const Navbar = () => {
                                       {subitem.subsubdropdown &&
                                         secondliActive === subitem.text && (
                                           <ul
-                                            className={`absolute md:flex flex-col bg-white rounded-tl-lg space-y-2 rounded-br-lg rounded-tr-lg left-full z-20 w-56`}
+                                            className={`absolute md:flex flex-col  rounded-tl-lg space-y-2 rounded-br-lg rounded-tr-lg bg-slate-300/90 left-full z-20 w-56`}
                                             style={{
                                               top: `${-subsubIndex * 1.5}rem`,
                                             }}
