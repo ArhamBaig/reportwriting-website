@@ -6,6 +6,8 @@ import WriteAReport from '@/components/WriteAReport'
 import Offerservices from '@/components/Offerservices'
 import ReportTypes from '@/components/ReportTypes'
 import ReportStructure from '@/components/ReportStructure'
+import Professors from '@/components/Professors'
+import Accordion from '@/components/Accordion'
 
 export default function Home() {
   return (
@@ -17,6 +19,8 @@ export default function Home() {
     <Offerservices />
     <ReportTypes />
     <ReportStructure />
+    <Professors />
+    <Accordion />
    </div>
   )
 }

@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+.ReactCollapse--collapse {
+  transition: height 400ms;
+}
+
+.fill-yellow:hover {
+  fill : #2491C5;
+}
+
 ::selection {
   color: black;
   background-color:#f4b600;

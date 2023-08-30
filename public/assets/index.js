@@ -19,6 +19,23 @@ import originality from "./originality.png";
 import price from "./price.png";
 import ontime from "./ontime.png";
 import quality from "./quality.png";
+import professor1 from "./professor-1.png";
+import professor2 from "./professor-2.png";
+import professor3 from "./professor-3.png";
+import professor4 from "./professor-4.png";
+import plus from "./plus.svg";
+import minus from "./minus.png";
+import rightarrow from "./right-arrow.png";
+import downarrow from "./down-arrow.png";
+import facebook from "./facebookico.svg";
+import flickr from "./flickrico.png";
+import instagram from "./instagramico.png";
+import linkedin from "./linkedinico.png";
+import pinterest from "./pinterestico.png";
+import whatsapp from "./whatsappico.svg";
+import tumblr from "./tumblrico.png";
+import twitter from "./twitterico.png";
+import mail from "./email.svg";
 
 export {
   heroimg,
@@ -42,4 +59,21 @@ export {
   price,
   ontime,
   quality,
+  professor1,
+  professor2,
+  professor3,
+  professor4,
+  plus,
+  minus,
+  rightarrow,
+  downarrow,
+  facebook,
+  flickr,
+  instagram,
+  linkedin,
+  pinterest,
+  whatsapp,
+  tumblr,
+  twitter,
+  mail,
 };
