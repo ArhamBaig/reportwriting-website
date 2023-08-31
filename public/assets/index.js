@@ -36,7 +36,8 @@ import whatsapp from "./whatsappico.svg";
 import tumblr from "./tumblrico.png";
 import twitter from "./twitterico.png";
 import mail from "./email.svg";
-
+import menu from './menu.svg';
+import close from './close.svg';
 export {
   heroimg,
   logo,
@@ -76,4 +77,6 @@ export {
   tumblr,
   twitter,
   mail,
+  menu,
+  close,
 };

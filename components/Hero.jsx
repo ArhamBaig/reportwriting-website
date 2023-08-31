@@ -4,9 +4,9 @@ import { heroimg, dots } from "@/public/assets";
 
 const Hero = () => {
   return (
-    <div className="bg-primary py-12 overflow-hidden mt-28">
+    <div className="bg-primary py-12 overflow-hidden mt-[127px]">
       <div className="container relative mx-auto px-1 lg:px-8 flex flex-col md:flex-row justify-between items-center">
-        <div className="absolute left-0 top-0 hidden md:block md:w-[30%] md:h-[30%] ring-2 rounded-full ring-secondary bg-transparent md:left-[-200px] md:top-0"></div>
+        <div className="absolute  top-0 hidden md:block md:w-[50%] md:h-[30%] ring-2 rounded-full ring-secondary bg-transparent md:left-[-400px] md:top-0"></div>
         <h1 className="relative text-white text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-7xl font-bold z-10">
           World's Best Report Writing Help From Top-Notch Academic Writers
           <span className="text-secondary">!</span>

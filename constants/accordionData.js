@@ -19,4 +19,16 @@ export const accordionData = [
         'title':'Are Your Payment Methods Secure And Safe?',
         'desc': "Of course, our payment gateway secures all transactions. Your financial information is kept private and cannot be stolen by a third party."
     },
+    {
+        'title':'Are My Identity and Details Confidential?',
+        'desc': "Yes, your identity and personal information are kept private. We never share or reveal your information to anyone unless required by law."
+    },
+    {
+        'title':'How Do I Find Out How far My Homework or Assignment has Progressed?',
+        'desc': "Simply logging into your account will allow you to check the status of your assignment. You can also contact our live chat support team, who are available to assist and help you. They will track the progress of your homework and inform you of the status of your order."
+    },
+    {
+        'title':'Are Your Payment Methods Secure And Safe?',
+        'desc': "Of course, our payment gateway secures all transactions. Your financial information is kept private and cannot be stolen by a third party."
+    },
 ]
